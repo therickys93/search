@@ -1,0 +1,22 @@
+.jumbotron
+{
+    background-color: white;
+}
+
+.header, .footer
+{
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#form {
+    width: 100%;
+}
+
+#word {
+    width: 100%;
+}

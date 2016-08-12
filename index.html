@@ -4,10 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>It Just Works Search</title>
+    <title>Search</title>
 
     <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="/functions.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,10 +19,25 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1 align="center">Under Construction <br /><small>Check it later</small></h1>
-      </div>
+    <div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+          <h1 align="center">Search</h1>
+            <form method="get" onsubmit="performRequest(); return false;">
+                <div id="form" class="form-group input-group input-group-lg">
+                        <select class="form-control" id="search">
+                          <option value="Google" selected="selected">Google</option>
+                          <option value="Yahoo">Yahoo</option>
+                          <option value="Bing">Bing</option>
+                        </select>
+                        <input type="text" class="form-control" id="word" autocomplete="off" placeholder="Insert here what you want to search">
+                        <button type="submit" class="btn btn-info btn-lg">Search</button>
+                </div>
+           </form>
+        </div>
+        <br /><hr />
+        <footer class="footer">
+          <h4>&copy; 2016 Riccardo Crippa</h4>
+        </footer>
     </div>
     <script src="/bower-components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

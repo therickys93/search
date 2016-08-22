@@ -6,7 +6,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>SearchHub</title>
 
-    <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <script src="functions.js"></script>
@@ -21,13 +21,24 @@
   <body>
     <div class="container theme-showcase" role="main">
         <div class="jumbotron">
-          <h1 align="center">SearchHub</h1>
+          
+          <h1 align="center"><i class="fa fa-search"></i> SearchHub <i class="fa fa-search"></i></h1>
             <form method="get" onsubmit="performRequest(); return false;">
                 <div id="form" class="form-group input-group input-group-lg">
-                        <select class="form-control" id="search">
-                          <option value="Google" selected="selected">Google</option>
-                          <option value="Yahoo">Yahoo</option>
+                        <select style="font-family:'FontAwesome'" class="form-control" id="search">
+                          <option value="Google" selected="selected">&#xf1a0; Google</option>
+                          <option value="Yahoo">&#xf19e; Yahoo</option>
                           <option value="Bing">Bing</option>
+                          <!--
+                          <option value="AOL">AOL</option>
+                          <option value="DuckDuckGo">DuckDuckGo</option>
+                          <option value="Ask">Ask</option>
+                          <option value="InfoSpace">InfoSpace</option>
+                          <option value="Info">Info</option>
+                          -->
+                          <option value="Twitter">&#xf099; Twitter</option>
+                          <option value="Github">&#xf09b; Github</option>
+                          <option value="StackOverflow">&#xf16c; StackOverflow</option>
                         </select>
                         <input type="text" class="form-control" id="word" autocomplete="off" placeholder="Insert here what you want to search">
                         <button type="submit" class="btn btn-info btn-lg">Search</button>

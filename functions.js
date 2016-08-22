@@ -16,5 +16,31 @@ function performRequest()
         {
             window.open("https://www.bing.com/search?q=" + word, "_self");
         }
+        /*
+        if(search_engine == "AOL") {
+            window.open("http://search.aol.com/aol/search?q=" + word, "_self");
+        }
+        if(search_engine == "DuckDuckGo") {
+            window.open("https://duckduckgo.com/?q=" + word, "_self");
+        }
+        if(search_engine == "Ask") {
+            window.open("http://ask.com/web?q=" + word, "_self");
+        }
+        if(search_engine == "InfoSpace") {
+            window.open("http://search.infospace.com/search/web?q=" + word, "_self");
+        }
+        if(search_engine == "Info") {
+            window.open("http://www.info.com/search?qkw=" + word, "_self");
+        }
+        */
+        if(search_engine == "Twitter") {
+            window.open("https://twitter.com/search?q=" + word, "_self");
+        }
+        if(search_engine == "Github") {
+            window.open("https://github.com/search?q=" + word, "_self");
+        }
+        if(search_engine == "StackOverflow"){
+            window.open("http://stackoverflow.com/search?q=" + word, "_self");
+        }
     }
 }

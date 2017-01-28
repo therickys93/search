@@ -44,3 +44,20 @@ function performRequest()
         }
     }
 }
+
+function leet(str) { 
+	return str.replace(/[a-z]/g,function f(a){
+		return "4BCD3F6H1JKLMN0PQR57"[parseInt(a, 36)-10] || a.replace(/[a-t]/gi,f)
+	}); 
+}
+
+// title of the html page
+document.querySelector('title').innerHTML = leet("search");
+// title of the h1
+document.querySelector('.title').innerHTML = leet("search");
+// placeholder
+document.getElementById('word').placeholder = leet("insert what you want to search");
+// button
+document.getElementById('button-search').innerHTML = leet("search");
+// copyright at the end of the page
+document.getElementById('copyright').innerHTML = leet("2016 Riccardo Crippa");

@@ -4,12 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>S34rcH</title>
+    <title></title>
 
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-    <script src="functions.js"></script>
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +22,7 @@
     <div class="container theme-showcase" role="main">
         <div class="jumbotron">
           
-          <h1 align="center">S34rcH</h1>
+          <h1 class="title" align="center"></h1>
             <form method="get" onsubmit="performRequest(); return false;">
                 <div id="form" class="form-group input-group input-group-lg">
                         <select style="font-family:'FontAwesome'" class="form-control" id="search">
@@ -40,19 +40,20 @@
                           <option value="Github">&#xf09b; 917HUB</option>
                           <option value="StackOverflow">&#xf16c; s74Ck 0v3rFl0w</option>
                         </select>
-                        <input type="text" class="form-control" id="word" autocomplete="off" placeholder="1N53R7 H3R3 Wh@ joO W4N7 7O 534Rch">
+                        <input type="text" class="form-control" id="word" autocomplete="off">
                         <div class="form-actions">
-                          <button type="submit" class="btn btn-info btn-lg">S34rcH</button>
+                          <button type="submit" id="button-search" class="btn btn-info btn-lg"></button>
                         </div>  
                 </div>
            </form>
         </div>
         <br /><hr />
         <footer class="footer">
-          <h4>&copy; 2016 R1CCard0 cR1ppA</h4>
+          <h4>&copy; <span id="copyright"></span></h4>
         </footer>
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="functions.js"></script>
   </body>
 </html>

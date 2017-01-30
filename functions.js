@@ -16,23 +16,6 @@ function performRequest()
         {
             window.open("https://www.bing.com/search?q=" + word, "_self");
         }
-        /*
-        if(search_engine == "AOL") {
-            window.open("http://search.aol.com/aol/search?q=" + word, "_self");
-        }
-        if(search_engine == "DuckDuckGo") {
-            window.open("https://duckduckgo.com/?q=" + word, "_self");
-        }
-        if(search_engine == "Ask") {
-            window.open("http://ask.com/web?q=" + word, "_self");
-        }
-        if(search_engine == "InfoSpace") {
-            window.open("http://search.infospace.com/search/web?q=" + word, "_self");
-        }
-        if(search_engine == "Info") {
-            window.open("http://www.info.com/search?qkw=" + word, "_self");
-        }
-        */
         if(search_engine == "Twitter") {
             window.open("https://twitter.com/search?q=" + word, "_self");
         }
@@ -44,6 +27,12 @@ function performRequest()
         }
         if(search_engine == "IJW"){
             window.open("https://github.com/itjustworksteam?q=" + word, "_self");
+        }
+        if(search_engine == "instagram"){
+            window.open("https://www.instagram.com/explore/tags/" + word, "_self");
+        }
+        if(search_engine == "facebook"){
+            window.open("https://www.facebook.com/search/all/?q=" + word, "_self");
         }
     }
 }

@@ -43,6 +43,12 @@ function leet(str) {
 	}); 
 }
 
+/* work in progress...
+function reverseLeet(str){
+    
+}
+*/
+
 // title of the html page
 document.querySelector('title').innerHTML = leet("search");
 // title of the h1

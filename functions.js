@@ -42,6 +42,9 @@ function performRequest()
         if(search_engine == "StackOverflow"){
             window.open("http://stackoverflow.com/search?q=" + word, "_self");
         }
+        if(search_engine == "IJW"){
+            window.open("https://github.com/itjustworksteam?q=" + word, "_self");
+        }
     }
 }
 

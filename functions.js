@@ -35,6 +35,9 @@ function performRequest()
         if(search_engine == "facebook"){
             window.open("https://www.facebook.com/search/all/?q=" + word, "_self");
         }
+        if(search_engine == "youtube"){
+            window.open("https://www.youtube.com/results?search_query=" + word, "_self");
+        }
     }
 }
 

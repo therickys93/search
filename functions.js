@@ -2,7 +2,6 @@ function performRequest()
 {
     var search_engine = document.getElementById("search").value;
     var word = document.getElementById("word").value;
-    word = reverseLeet(word);
     if(word)
     {
         if(search_engine == "Google")
@@ -43,11 +42,11 @@ function performRequest()
 
 function leet(str) { 
 
-    return str.toUpperCase().replace(/a/gi, '4').replace(/i/gi, '1').replace(/e/gi, '3').replace(/g/gi, '6').replace(/o/gi, '0').replace(/s/gi, '5').replace(/t/gi, '7').toLowerCase(); 
+    return str;
 }
 
 function reverseLeet(str){
-    return str.toUpperCase().replace(/4/gi, 'A').replace(/1/gi, 'I').replace(/3/gi, 'E').replace(/6/gi, 'G').replace(/0/gi, 'O').replace(/5/gi, 'S').replace(/7/gi, 'T').toLowerCase();
+    return str;
 }
 
 // title of the html page

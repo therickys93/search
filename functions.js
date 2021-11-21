@@ -58,4 +58,4 @@ document.getElementById('word').placeholder = leet("insert what you want to sear
 // button
 document.getElementById('button-search').innerHTML = leet("search");
 // copyright at the end of the page
-document.getElementById('copyright').innerHTML = leet("2016 Riccardo Crippa");
+document.getElementById('copyright').innerHTML = leet("2021 Riccardo Crippa");
